@@ -11,3 +11,6 @@ In this challenge, as a data scientist of a bank, you are asked to analyze the p
 Objective
 
 Our objective is to build a machine learning model to predict whether the customer will churn or not in the next six months.
+
+## Data:
+
