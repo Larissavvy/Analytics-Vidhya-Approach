@@ -35,20 +35,30 @@ After Removal:
 
 ## Steps Taken:
 
-Cleaned the dataset
-Data Visualization.
-One-Hot Encoding: Some of the values such as Gender, Income, Credit Category were in like Male, Female, Income more than 5L etc, used Pandas Get Dummies function to encode them.
-Used drop_first = True to avoid the dummy variable trap.
-Split the Data in Test and Train split: The test ratio was 20% of the dataset, while 80% was training Data.
-Min Max Scaling: Variables such as Age, Balance were in a very different range as the other variables were in between 0 to 1, scaled the dataset to get them in the same range.
-Outlier Removal: The columns such as Age and Balance had values that were too high. So here I used Isolation Forest to identify them and have them removed from the data.
+1.Cleaned the dataset
+
+2.Data Visualization.
+
+3.One-Hot Encoding: Some of the values such as Gender, Income, Credit Category were in like Male, Female, Income more than 5L etc, used Pandas Get Dummies function to encode them.
+
+4.Used drop_first = True to avoid the dummy variable trap.
+
+5.Split the Data in Test and Train split: The test ratio was 20% of the dataset, while 80% was training Data.
+
+6.Min Max Scaling: Variables such as Age, Balance were in a very different range as the other variables were in between 0 to 1, scaled the dataset to get them in the same range.
+
+7.Outlier Removal: The columns such as Age and Balance had values that were too high. So here I used Isolation Forest to identify them and have them removed from the data.
+
 Read more about Isolation forest here: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
-4. Correlation: Checking the correlation between the Features and target I dropped ['Credit_Category_Poor', 'Income_Less than 5L','Income_5L - 10L',
+
+8. Correlation: Checking the correlation between the Features and target I dropped ['Credit_Category_Poor', 'Income_Less than 5L','Income_5L - 10L',
  'Vintage','Balance']) columns.
-5. SMOTE: Used Smote and oversampled the minority class.
-6. Models: Final Model used was Extreme Gradient Boosting with Hyperparameter Tuning. Parameters were tuned using RandomizedSearchCV. 
+ 
+9. SMOTE: Used Smote and oversampled the minority class.
+
+10. Models: Final Model used was Extreme Gradient Boosting with Hyperparameter Tuning. Parameters were tuned using RandomizedSearchCV. 
 
 
-
+---- --- ---- ----- ------ ---- ---- -- ----- ----- -------- ----------- ------ -------- ----------- --------- ---------------- -----------
 
 
